@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class BubbleSort {
+    public static void main(String[] args) {
+        int[] lilyonokArray = new int[] {7, 2, 5, 6, 8, 10, 3, 2, 10, 11, 0, 8};
+        int temp;
+        for(int i=0;i<lilyonokArray.length;i++){    //здесь входим в цикл и идем по всей длине массива
+            for (int j=0;j<lilyonokArray.length-1;j++){ //здесь входим в другой цикл, чтобы заменить элементы для всей длины массива
+                if( lilyonokArray[j+1]<lilyonokArray[j]){ //условие для сравнения двух соседних элементов массива
+                    temp=lilyonokArray[j+1];             //=2 временная переменная нужная для сохранения временного результата
+                    lilyonokArray[j+1]=lilyonokArray[j];  //=7
+                    lilyonokArray[j]=temp;
+                    System.out.println(Arrays.toString(lilyonokArray));
+                }
+            }
+        }
+    }
+
+}
