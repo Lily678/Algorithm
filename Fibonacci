@@ -1,1 +1,16 @@
 
+public class Fibonacci {
+    public static void main(String[] args) {
+     int firstNumber=0;
+     int secondNumber=1;
+     int Sum;
+        System.out.println(firstNumber);
+        System.out.println(secondNumber);
+     for (int i=2; i<=100; i++){
+         Sum=firstNumber+secondNumber;
+         System.out.println(Sum);
+         firstNumber=secondNumber;
+         secondNumber=Sum;
+     }
+    }
+}
